@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+	
+    <style>
+        .plan{
+    min-height: 100vh;
+    text-align: center;
+    background:#eee;
+}
+
+.plan .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan .box-container .box{
+    background:#fff;
+    margin:2rem;
+    width:30rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.plan .box-container .box:hover{
+    transform: scale(1.04);
+}
+
+.plan .box-container .box .title{
+    font-size: 2.5rem;
+    background:var(--orange);
+    color:#fff;
+    padding:1rem 0;
+}
+
+.plan .box-container .box .price{
+    font-size: 4rem;
+    color:#333;
+    padding-top:1rem;
+}
+
+.plan .box-container .box .price span{
+    font-size: 2rem;
+}
+
+.plan .box-container .box .month{
+    font-size: 2rem;
+    color:#666;
+}
+
+.plan .box-container .box ul{
+    margin:2rem 8rem;
+    list-style: none;
+}
+
+.plan .box-container .box ul li{
+    text-align: left;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:#333;
+}
+
+.plan .box-container .box ul li i{
+    color:var(--orange);
+    padding:0 .5rem;
+}
+
+.plan .box-container .box .btn{
+    margin-bottom: 3rem;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <section class="plan" id="plan">
+
+        <h1 class="heading">membership plan</h1>
+        
+        <div class="box-container">
+        
+            <div class="box">
+                <h3 class="title">basic</h3>
+                <h3 class="price">Rs 5,000<span>/mo</span></h3>
+                <h3 class="month">3 months</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i>weight lifting</li>
+                    <li><i class="fas fa-check"></i>cardio</li>
+                    <li><i class="fas fa-check"></i>yoga</li>
+                    <li><i class="fas fa-check"></i>training</li>
+                    <li><i class="fas fa-check"></i>protein powder</li>
+                </ul>
+               <form action="checkout.php" ><a href="#checkout.php"><button class="btn">check out</button></a></form>
+            </div>
+        
+            <div class="box">
+                <h3 class="title">standard</h3>
+                <h3 class="price">Rs 8,000<span>/mo</span></h3>
+                <h3 class="month">6 months</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i>weight lifting</li>
+                    <li><i class="fas fa-check"></i>cardio</li>
+                    <li><i class="fas fa-check"></i>yoga</li>
+                    <li><i class="fas fa-check"></i>training</li>
+                    <li><i class="fas fa-check"></i>protein powder</li>
+                </ul>
+                <form action="checkout.php" ><a href="#checkout.php"><button class="btn">check out</button></a></form>
+            </div>
+        
+            <div class="box">
+                <h3 class="title">premium</h3>
+                <h3 class="price">Rs 11,000<span>/mo</span></h3>
+                <h3 class="month">12 months</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i>weight lifting</li>
+                    <li><i class="fas fa-check"></i>cardio</li>
+                    <li><i class="fas fa-check"></i>yoga</li>
+                    <li><i class="fas fa-check"></i>training</li>
+                    <li><i class="fas fa-check"></i>protein powder</li>
+                </ul>
+                <form action="checkout.php" ><a href="#checkout.php"><button class="btn">check out</button></a></form>
+            </div>
+        
+        </div>
+    </section>        
+
+
+	<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/main.js"></script>
+  
+</body>
+</html>
